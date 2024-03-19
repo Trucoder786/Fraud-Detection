@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fraud Detection Form</title>
+<style>
+    .container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    .form-group label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .form-group input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    .form-group input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .output {
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <form  id="fraudDetectionForm" method="get">
+        <div class="form-group">
+            <label for="TransType">Transaction Type:</label>
+            <input type="text" id="TransType" name="TransType" required>
+        </div>
+        <div class="form-group">
+            <label for="Amount">Amount:</label>
+            <input type="text" id="Amount" name="Amount" required>
+        </div>
+        <div class="form-group">
+            <label for="OldBal">Old Balance:</label>
+            <input type="text" id="OldBal" name="OldBal" required>
+        </div>
+        <div class="form-group">
+            <label for="NewBal">New Balance:</label>
+            <input type="text" id="NewBal" name="NewBal" required>
+        </div>
+        <div class="form-group">
+            <label for="OldBalDes">Old Balance Destination:</label>
+            <input type="text" id="OldBalDes" name="OldBalDes" required>
+        </div>
+        <div class="form-group">
+            <label for="NewBalDes">New Balance Destination:</label>
+            <input type="text" id="NewBalDes" name="NewBalDes" required>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Detect Fraud">
+        </div>
+    </form>
+
+    <div class="output" id="output">
+        <!-- Output will be displayed here -->
+    </div>
+</div>
+
+</body>
+</html>
